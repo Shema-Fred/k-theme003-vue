@@ -1006,6 +1006,20 @@ const router = new Router({
             pageTitle: "Form Layouts",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-wizard",
+          name: "extra-component-form-wizard",
+          component: () => import("@/views/forms/form-wizard/FormWizard.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Wizard", active: true }
+            ],
+            pageTitle: "Form Wizard",
+            rule: "editor"
+          }
         }
       ]
     }
