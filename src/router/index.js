@@ -902,6 +902,21 @@ const router = new Router({
             pageTitle: "Select",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/switch",
+          name: "form-element-switch",
+          component: () =>
+            import("@/views/forms/form-elements/switch/Switch.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Switch", active: true }
+            ],
+            pageTitle: "Switch",
+            rule: "editor"
+          }
         }
       ]
     }
