@@ -977,6 +977,21 @@ const router = new Router({
             pageTitle: "Number Input",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/textarea",
+          name: "form-element-textarea",
+          component: () =>
+            import("@/views/forms/form-elements/textarea/Textarea.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Textarea", active: true }
+            ],
+            pageTitle: "Textarea",
+            rule: "editor"
+          }
         }
       ]
     }
