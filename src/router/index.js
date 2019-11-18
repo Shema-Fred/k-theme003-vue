@@ -947,6 +947,21 @@ const router = new Router({
             pageTitle: "Radio",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/input",
+          name: "form-element-input",
+          component: () =>
+            import("@/views/forms/form-elements/input/Input.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Input", active: true }
+            ],
+            pageTitle: "Input",
+            rule: "editor"
+          }
         }
       ]
     }
