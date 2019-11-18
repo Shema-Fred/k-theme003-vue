@@ -917,6 +917,21 @@ const router = new Router({
             pageTitle: "Switch",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/checkbox",
+          name: "form-element-checkbox",
+          component: () =>
+            import("@/views/forms/form-elements/checkbox/Checkbox.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Checkbox", active: true }
+            ],
+            pageTitle: "Checkbox",
+            rule: "editor"
+          }
         }
       ]
     }
