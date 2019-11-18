@@ -1035,6 +1035,21 @@ const router = new Router({
             pageTitle: "Form Validation",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-input-group",
+          name: "extra-component-form-input-group",
+          component: () =>
+            import("@/views/forms/form-input-group/FormInputGroup.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Input Group", active: true }
+            ],
+            pageTitle: "Form Input Group",
+            rule: "editor"
+          }
         }
       ]
     }
