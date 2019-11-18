@@ -962,6 +962,21 @@ const router = new Router({
             pageTitle: "Input",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/number-input",
+          name: "form-element-number-input",
+          component: () =>
+            import("@/views/forms/form-elements/number-input/NumberInput.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Number Input", active: true }
+            ],
+            pageTitle: "Number Input",
+            rule: "editor"
+          }
         }
       ]
     }
