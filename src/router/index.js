@@ -902,6 +902,154 @@ const router = new Router({
             pageTitle: "Select",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/switch",
+          name: "form-element-switch",
+          component: () =>
+            import("@/views/forms/form-elements/switch/Switch.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Switch", active: true }
+            ],
+            pageTitle: "Switch",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-elements/checkbox",
+          name: "form-element-checkbox",
+          component: () =>
+            import("@/views/forms/form-elements/checkbox/Checkbox.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Checkbox", active: true }
+            ],
+            pageTitle: "Checkbox",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-elements/radio",
+          name: "form-element-radio",
+          component: () =>
+            import("@/views/forms/form-elements/radio/Radio.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Radio", active: true }
+            ],
+            pageTitle: "Radio",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-elements/input",
+          name: "form-element-input",
+          component: () =>
+            import("@/views/forms/form-elements/input/Input.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Input", active: true }
+            ],
+            pageTitle: "Input",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-elements/number-input",
+          name: "form-element-number-input",
+          component: () =>
+            import("@/views/forms/form-elements/number-input/NumberInput.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Number Input", active: true }
+            ],
+            pageTitle: "Number Input",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-elements/textarea",
+          name: "form-element-textarea",
+          component: () =>
+            import("@/views/forms/form-elements/textarea/Textarea.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Textarea", active: true }
+            ],
+            pageTitle: "Textarea",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-layouts",
+          name: "forms-form-layouts",
+          component: () => import("@/views/forms/FormLayouts.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Forms" },
+              { title: "Form Layouts", active: true }
+            ],
+            pageTitle: "Form Layouts",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-wizard",
+          name: "extra-component-form-wizard",
+          component: () => import("@/views/forms/form-wizard/FormWizard.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Wizard", active: true }
+            ],
+            pageTitle: "Form Wizard",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-validation",
+          name: "extra-component-form-validation",
+          component: () =>
+            import("@/views/forms/form-validation/FormValidation.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Validation", active: true }
+            ],
+            pageTitle: "Form Validation",
+            rule: "editor"
+          }
+        },
+        {
+          path: "/forms/form-input-group",
+          name: "extra-component-form-input-group",
+          component: () =>
+            import("@/views/forms/form-input-group/FormInputGroup.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Input Group", active: true }
+            ],
+            pageTitle: "Form Input Group",
+            rule: "editor"
+          }
         }
       ]
     }

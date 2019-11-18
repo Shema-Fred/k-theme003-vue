@@ -453,12 +453,12 @@ export default [
         icon: 'CopyIcon',
         i18n: 'FormElements',
         submenu: [
-          // {
-          //  url: '/forms/form-elements/select',
-          //  name: "Select",
-          //  slug: "form-element-select",
-          //  i18n: "Select",
-          // },
+          {
+           url: '/forms/form-elements/select',
+           name: "Select",
+           slug: "form-element-select",
+           i18n: "Select",
+          },
           {
             url: '/forms/form-elements/switch',
             name: 'Switch',
