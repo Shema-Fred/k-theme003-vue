@@ -932,6 +932,21 @@ const router = new Router({
             pageTitle: "Checkbox",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-elements/radio",
+          name: "form-element-radio",
+          component: () =>
+            import("@/views/forms/form-elements/radio/Radio.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Form Elements" },
+              { title: "Radio", active: true }
+            ],
+            pageTitle: "Radio",
+            rule: "editor"
+          }
         }
       ]
     }
