@@ -992,6 +992,20 @@ const router = new Router({
             pageTitle: "Textarea",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-layouts",
+          name: "forms-form-layouts",
+          component: () => import("@/views/forms/FormLayouts.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Forms" },
+              { title: "Form Layouts", active: true }
+            ],
+            pageTitle: "Form Layouts",
+            rule: "editor"
+          }
         }
       ]
     }
