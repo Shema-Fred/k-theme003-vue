@@ -1020,6 +1020,21 @@ const router = new Router({
             pageTitle: "Form Wizard",
             rule: "editor"
           }
+        },
+        {
+          path: "/forms/form-validation",
+          name: "extra-component-form-validation",
+          component: () =>
+            import("@/views/forms/form-validation/FormValidation.vue"),
+          meta: {
+            breadcrumb: [
+              { title: "Home", url: "/" },
+              { title: "Extra Components" },
+              { title: "Form Validation", active: true }
+            ],
+            pageTitle: "Form Validation",
+            rule: "editor"
+          }
         }
       ]
     }
